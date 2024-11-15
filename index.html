@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png" />
+    <!-- Enlances para importar fuentes de Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Import Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importamos el CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Enlance a archivo CSS -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Brotherhood Of Gamers</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <!-- Div para poner logo | Puede estar el h1  -->
+      <!-- Ctrl + K + C HTML comment  -->
+
+      <nav class="navbar sticky">
+        <!-- Class sticky menu quede fijo en la parte superior -->
+        <div class="nav_home">
+          <!-- Logo de la empresa -->
+          <img
+            src="./img/brotherhood-steel.png"
+            alt="Brotherhood of gamers logo"
+            class="logo"
+          />
+          <!-- Nombre de la empresa -->
+          <h1 class="titulo">The Brotherhood Of Gamers</h1>
+        </div>
+
+        <!-- Menu de navegacion -->
+
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="reseñas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Sección derecha del menú con iconos -->
+        <div class="nav_inicio iconos">
+          <!-- Icono del carrito de compras -->
+          <a href="#"
+            ><box-icon class="icono" name="cart" color="white"></box-icon
+          ></a>
+          <!-- Icono del perfil de usuario -->
+          <a href="#"
+            ><box-icon class="icono" name="user" color="white"></box-icon
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Inicio Carousel Imagenes Boostrap -->
+
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/carousel-1.png"
+              class="d-block w-100"
+              alt="banner 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel-2.png"
+              class="d-block w-100"
+              alt="banner 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel-3.png"
+              class="d-block w-100"
+              alt="banner 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Fin Carousel Imagenes -->
+    </header>
+
+    <!-- Comienzo de la sección main -->
+    <main>
+      <!-- Subtitulo de la sección -->
+      <h3 class="main_subtitulo">Productos Destacados</h3>
+      <!-- Contenedor de las cards de productos -->
+      <div class="main_cards">
+        <!-- Card del producto -->
+        <div class="card">
+          <!-- Imagen del producto -->
+          <img src="./img/mother_B450MHP.jpg" alt="MotherBoard B450MHP" />
+
+          <!-- Cuerpo de la card -->
+          <div class="card-body">
+            <!-- Nombre del producto -->
+            <h5 class="card-title">B450MHP</h5>
+            <!-- Descripción corta y precio -->
+            <p class="card-text">Mother Biostar B450MHP v6.2 HDMI DDR4 AM4</p>
+            <p class="card-price">$48.000</p>
+          </div>
+          <button class="comprar">Comprar</button>
+        </div>
+
+        <!-- Card del producto -->
+        <div class="card">
+          <!-- Imagen del producto -->
+          <img
+            src="./img/placa_de_Video_Zotac_GeForce_RTX_4060_Ti_16GB_GDDR6_AMP.jpg"
+            alt=""
+          />
+
+          <!-- Cuerpo de la card -->
+          <div class="card-body">
+            <!-- Nombre del producto -->
+            <h5 class="card-title">RTX 4060</h5>
+            <!-- Descripción corta y precio -->
+            <p class="card-text">
+              Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP
+            </p>
+            <p class="card-price">$48.000</p>
+          </div>
+          <button class="comprar">Comprar</button>
+        </div>
+
+        <!-- Card del producto -->
+        <div class="card">
+          <!-- Imagen del producto -->
+          <img src="./img/Intel_Core_i7_14700K.jpg" alt="" />
+
+          <!-- Cuerpo de la card -->
+          <div class="card-body">
+            <!-- Nombre del producto -->
+            <h5 class="card-title">i7 14700K</h5>
+            <!-- Descripción corta y precio -->
+            <p class="card-text">
+              Procesador Intel Core i7 14700K 5.6GHz Turbo Socket 1700 Raptor
+              Lake
+            </p>
+            <p class="card-price">$48.000</p>
+          </div>
+          <button class="comprar">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Contenedor de iframe video YouTube -->
+      <section>
+        <div class="player">
+          <h2 class="player-title">Novedades Gamers</h2>
+          <iframe
+            class="youtube-player"
+            src="https://www.youtube.com/embed/AnTezcHNwP0"
+            title="Introducing AMD Ryzen™ 7000 Series processors for creative professionals."
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            >Ryzen 7000 series introduction</iframe
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Comienzo del Footer -->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#"><img src="./img/brotherhood-steel.png" alt="" /></a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>¿Quienes somos?</h2>
+          <p>
+            The Brotherhood of Gamers es tu tienda de hardware de confianza.
+            Sabemos lo que necesitas para vivir la mejor experiencia gamer
+            porque nosotros somos gamers.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Seguinos en nuestras redes</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-x"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>
+          &copy; 2024 <b>the Brotherhood of Gamers</b> - Todos los Derechos
+          Reservados.
+        </small>
+      </div>
+    </footer>
+    <!-- script JS necesario para Bootstrap e Iconos -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script necesario para Iconos de BoxIcon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- FontAwesome Import -->
+    <script
+      src="https://kit.fontawesome.com/8e706c4a38.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

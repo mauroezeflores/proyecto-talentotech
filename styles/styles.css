@@ -1,0 +1,348 @@
+body {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav_home {
+  display: flex; /* Usamos flexbox */
+  align-items: center; /* Centramos verticalmente */
+}
+
+.logo {
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.titulo {
+  color: white; /* Color del texto en blanco */
+  font-size: 24px; /* Tamaño del texto */
+  margin: 0; /* Quitamos márgenes */
+}
+
+/* Espacio entre iconos navbar */
+.iconos a {
+  margin-left: 20px; /* Espacio entre los iconos */
+}
+
+/* Menú de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e40b0b;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+  margin-top: 20px; /* Espacio superior antes del carrusel */
+}
+
+.carousel-item img {
+  height: 500px; /* Altura fija de las imágenes */
+  object-fit: cover; /* Las imágenes cubren todo el espacio disponible */
+}
+
+/* Estilos para el subtítulo en el contenido principal */
+.main_subtitulo {
+  text-align: center; /* Centramos el texto */
+  margin-top: 40px; /* Espacio superior */
+}
+
+/* Estilos para las tarjetas de productos */
+.main_cards {
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Espaciamos las tarjetas uniformemente */
+  flex-wrap: wrap; /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+  margin: 20px 0; /* Espacio superior */
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  padding-top: 10px;
+  margin: 15px; /* Espacio alrededor de cada tarjeta */
+  width: 20%; /*Unidad relativa al tamaño del elemento raiz */
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.23);
+  transition: 0.6s;
+  background-color: #ffffff; /* Color blanco */
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-title {
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.card-text {
+  text-align: center;
+  padding-top: 0 8px;
+}
+
+.card-price {
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+  color: rgb(4, 3, 3);
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+.card-body {
+  padding: 10px 10px 0px 10px;
+}
+
+.comprar {
+  text-align: center;
+  width: 100%;
+  padding: 18px;
+  margin-top: 15px;
+  border: 0;
+  outline: none;
+  border-bottom-right-radius: 20px; /* Redondeo los bordes inferiores para que coincida con las card*/
+  border-bottom-left-radius: 20px;
+  background-color: rgb(74, 118, 147);
+}
+
+/* Estilo del iframe video youtube */
+.player {
+  margin: 10%;
+}
+
+.player-title {
+  text-align: center;
+  margin: 20px;
+}
+
+.youtube-player {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+/* Fin Estilo del iframe video youtube */
+
+/* Footer de la pag */
+.footer {
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .grupo-1 .box figure img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.footer .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.footer .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover {
+  color: aquamarine;
+}
+
+.footer .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .grupo-2 small {
+  font-size: 15px;
+}
+/* Fin estilos del footer */
+
+/* Estilos del formulario de consulta */
+
+.formulario-consulta {
+  margin: 20px 50px;
+}
+
+.formulario-consulta form {
+  margin-top: 20px; /* Espacio superior antes del formulario */
+}
+
+.formulario-consulta form h2 {
+  font-size: 24px; /* Tamaño del título del formulario */
+  text-align: center;
+}
+
+.formulario-consulta input,
+.formulario-consulta textarea {
+  width: 100%; /* Campos ocupan todo el ancho disponible */
+  padding: 10px; /* Espacio interno en los campos */
+  margin-bottom: 10px; /* Espacio inferior entre los campos */
+  border: 1px solid #ced4da; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.formulario-consulta button {
+  padding: 10px 20px; /* Espacio interno del botón */
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.formulario-consulta button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse*/
+}
+/* Fin de Estilos del formulario de consulta */
+
+/* :::::::::::: Estilos reseñas ::::::::::::::: */
+/* Contenedor de las reseñas */
+.review-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Una columna por defecto */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjetas */
+.card-review {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card-review:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del nombre del cliente */
+.card-review h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #444;
+}
+
+/* Estilo del texto de la reseña */
+.card-review p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estrellas de reseña */
+.card-review span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #f4c542;
+}
+
+/* :::::::::::: Fin Estilos reseñas ::::::::::::::: */
+
+@media (max-width: 1000px) {
+  .card {
+    width: 45%;
+  }
+
+  .review-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 100%;
+  }
+
+  .review-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}

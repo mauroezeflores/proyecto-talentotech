@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <!-- Enlances para importar fuentes de Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Import Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importamos el CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Enlance a archivo CSS -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Brotherhood Of Gamers</title>
+  </head>
+  <body>
+    <header>
+      <!-- Div para poner logo | Puede estar el h1  -->
+      <!-- Ctrl + K + C HTML comment  -->
+
+      <nav class="navbar sticky">
+        <!-- Class sticky menu quede fijo en la parte superior -->
+        <div class="nav_home">
+          <!-- Logo de la empresa -->
+          <img
+            src="./img/brotherhood-steel.png"
+            alt="Brotherhood of gamers logo"
+            class="logo"
+          />
+          <!-- Nombre de la empresa -->
+          <h1 class="titulo">The Brotherhood Of Gamers</h1>
+        </div>
+
+        <!-- Menu de navegacion -->
+
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="reseñas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Sección derecha del menú con iconos -->
+        <div class="nav_inicio iconos">
+          <!-- Icono del carrito de compras -->
+          <a href="#"
+            ><box-icon class="icono" name="cart" color="white"></box-icon
+          ></a>
+          <!-- Icono del perfil de usuario -->
+          <a href="#"
+            ><box-icon class="icono" name="user" color="white"></box-icon
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Comienzo del Main -->
+      <!-- Reviews -->
+      <section class="review-container">
+        <div class="card-review">
+          <h2>Lionel Messi</h2>
+          <p>
+            ¡Excelente página! En todo momento me asesoraron de la mejor manera.
+          </p>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="card-review">
+          <h2>Franco Colapinto</h2>
+          <p>
+            Mi compra llegó rápido y en excelentes condiciones. Volvere a
+            comprar
+          </p>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="card-review">
+          <h2>Jorge Luis</h2>
+          <p>Buenos precios y buena atención.</p>
+          <span>⭐⭐⭐⭐</span>
+        </div>
+        <div class="card-review">
+          <h2>Marcelo Gallardo</h2>
+          <p>
+            El producto no funcionaba, pero me solucionaron el problema a los
+            pocos días.
+          </p>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="card-review">
+          <h2>Pedro Martínez</h2>
+          <p>El pedido llegó unos días tarde.</p>
+          <span>⭐⭐⭐⭐</span>
+        </div>
+        <div class="card-review">
+          <h2>Indio Solari</h2>
+          <p>El pedido llegó unos días tarde.</p>
+          <span>⭐⭐⭐⭐</span>
+        </div>
+      </section>
+
+      <!-- Fin del Main -->
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#"><img src="./img/brotherhood-steel.png" alt="" /></a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>¿Quienes somos?</h2>
+          <p>
+            The Brotherhood of Gamers es tu tienda de hardware de confianza.
+            Sabemos lo que necesitas para vivir la mejor experiencia gamer
+            porque nosotros somos gamers.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Seguinos en nuestras redes</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-x"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>
+          &copy; 2024 <b>the Brotherhood of Gamers</b> - Todos los Derechos
+          Reservados.
+        </small>
+      </div>
+    </footer>
+    <!-- script JS necesario para Bootstrap e Iconos -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script necesario para Iconos de BoxIcon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- FontAwesome Import -->
+    <script
+      src="https://kit.fontawesome.com/8e706c4a38.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
