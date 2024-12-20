@@ -1,4 +1,11 @@
-Mauro Ezequiel Flores - C24231 - TalentoTech Pre-Entrega
+Mauro Ezequiel Flores - C24231 -
+TalentoTech Entrega Final
+
+Adapte el proyecto entregado en la pre entrega, trabaje sobre productos.html para agregar funcionalidad JavaScript en mí página. Justamente por esta razón los archivos .js tienen el mismo nombre que el HTML donde hacen efecto. Realmente esta última parte no tuve el tiempo necesario para dejar el proyecto como me quería, pero voy a seguir trabajando en mi conocimiento sobre JavaScript y a seguir creando páginas.
+
+---
+
+TalentoTech Pre-Entrega
 
 Proyecto de "The Brotherhood of Gamers" - Sitio Web de venta de hardware para computadora
 
