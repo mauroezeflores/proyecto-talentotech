@@ -54,9 +54,11 @@
         <!-- Sección derecha del menú con iconos -->
         <div class="nav_inicio iconos">
           <!-- Icono del carrito de compras -->
-          <a href="#"
+          <a href="carrito.html"
             ><box-icon class="icono" name="cart" color="white"></box-icon
-          ></a>
+            ><span id="contador-carrito">0</span></a
+          >
+
           <!-- Icono del perfil de usuario -->
           <a href="#"
             ><box-icon class="icono" name="user" color="white"></box-icon
@@ -132,7 +134,9 @@
             <p class="card-text">Mother Biostar B450MHP v6.2 HDMI DDR4 AM4</p>
             <p class="card-price">$48.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button onclick="agregarAlCarrito('Mother Biostar B450MHP',48000)">
+            Agregar
+          </button>
         </div>
 
         <!-- Card del producto -->
@@ -153,7 +157,11 @@
             </p>
             <p class="card-price">$48.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button
+            onclick="agregarAlCarrito('GeForce RTX 4060 Ti 16GB GDDR6 AMP',48000)"
+          >
+            Agregar
+          </button>
         </div>
 
         <!-- Card del producto -->
@@ -172,7 +180,9 @@
             </p>
             <p class="card-price">$48.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button onclick="agregarAlCarrito('Intel Core i7 14700K',48000)">
+            Agregar
+          </button>
         </div>
         <!-- Fin de la card -->
 
@@ -191,7 +201,11 @@
             </p>
             <p class="card-price">$500.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button
+            onclick="agregarAlCarrito('LG Ultragear 27GS85Q-B 27',500000)"
+          >
+            Agregar
+          </button>
         </div>
         <!-- Fin de la card -->
 
@@ -209,7 +223,11 @@
             </p>
             <p class="card-price">$80.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button
+            onclick="agregarAlCarrito('DDR5 64GB (2x32GB) 6000Mhz T-CREATE EXPERT CL34 Black Intel',80000)"
+          >
+            Agregar
+          </button>
         </div>
         <!-- Fin de la card -->
 
@@ -227,7 +245,11 @@
             </p>
             <p class="card-price">$50.000</p>
           </div>
-          <button class="comprar">Comprar</button>
+          <button
+            onclick="agregarAlCarrito(' Gabinete Cougar MX360 ARGB',50000)"
+          >
+            Agregar
+          </button>
         </div>
         <!-- Fin de la card -->
       </div>
@@ -265,6 +287,8 @@
         </small>
       </div>
     </footer>
+    <!-- script JS para carrito de compras -->
+    <script src="./productos.js"></script>
     <!-- script JS necesario para Bootstrap e Iconos -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
